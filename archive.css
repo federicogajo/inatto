@@ -1,0 +1,73 @@
+.header {
+  position: relative;
+  align-items: center;
+  border-top: 1px dashed black;
+  background-color: white;
+}
+
+.issue {
+  position: absolute;
+  justify-content: space-between;
+  background-color: #bde3f2;
+  height: fit-content;
+  flex-direction: row;
+  /* align-items: ; */
+  z-index: 5;
+  border-top: none;
+  border-bottom: 1px dashed black;
+}
+
+.home {
+  /* background-color: white; */
+  z-index: 10;
+}
+
+.artCtn {
+  margin-top: 2vh;
+}
+
+.txt {
+  text-shadow: -1px -1px 0 #ffff, 1px -1px 0 #ffff, -1px 1px 0 #ffff;
+  z-index: 10;
+}
+
+.minWidth {
+  min-width: 19.6vw;
+  flex-basis: auto;
+  /* flex-grow: 1; */
+}
+
+.txtCenter {
+  text-align: center;
+}
+
+.artImageCtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.artImage {
+  max-height: 180px;
+  transition: 0.2s;
+  /* border: white solid 2px; */
+  box-sizing: border-box;
+}
+
+.artImage:hover {
+  border: black solid 2px;
+  /* transition: none; */
+}
+
+.artImageNum {
+  position: absolute;
+  /* margin: auto 0; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-shadow: -1px -1px 0 #ffff, 1px -1px 0 #ffff, -1px 1px 0 #ffff;
+}
+
+img:hover {
+  cursor: nesw-resize;
+}
