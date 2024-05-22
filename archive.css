@@ -1,7 +1,7 @@
 .header {
   position: relative;
   align-items: center;
-  border-top: 1px dashed black;
+  /* border-top: 1px dashed black; */
   background-color: white;
 }
 
@@ -14,7 +14,7 @@
   /* align-items: ; */
   z-index: 5;
   border-top: none;
-  border-bottom: 1px dashed black;
+  /* border-bottom: 1px dashed black; */
 }
 
 .home {
