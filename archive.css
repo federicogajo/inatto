@@ -48,7 +48,7 @@
 }
 .artImage {
   max-height: 180px;
-  transition: 0.2s;
+  transition: 0.25s;
   /* border: white solid 2px; */
   box-sizing: border-box;
 }
