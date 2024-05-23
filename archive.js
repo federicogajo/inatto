@@ -181,9 +181,7 @@ for (let i = 0; i < artworks.length; i++) {
   //   artImage.src =
   //     "assets/images/given to be copied/" + artworks[i].author + ".png";
   artImage.src =
-    "assets/images/given to be copied-display/webp/" +
-    artworks[i].author +
-    ".webp";
+    "assets/images/given to be copied-display/" + artworks[i].author + ".webp";
   // idea di phind per caricare le immagini a prescindere - mettere il formato come attributo all'interno dell'oggetto artwork
 
   // INGRANDIMENTO IMMAGINI
