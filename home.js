@@ -140,7 +140,7 @@ let footerTxt = [
   {
     sezione: "Contesto:</br>",
     contenuto:
-      "Laboratorio di Progettazione di sistemi e artefatti complessi, </br> Sezione C1, A.A. 2023 - 2024</br> Laurea Magistrale in Design della Comunicazione,Scuola del Design, Politecnico di Milano",
+      "Laboratorio di Progettazione di sistemi e artefatti complessi, Sezione C1, A.A. 2023 - 2024</br> Laurea Magistrale in Design della Comunicazione, Scuola del Design, Politecnico di Milano",
   },
   {
     sezione: "Docenti:</br>",
@@ -164,6 +164,7 @@ for (let i = 0; i < footerTxt.length; i++) {
   footerE = document.createElement("div");
   footerE.classList.add("footerE");
   footerE.style.minWidth = "12vw";
+  footerE.style.paddingRight = "1vw";
   //   console.log(footerE);
   footerE.innerHTML = footerTxt[i].sezione + footerTxt[i].contenuto;
   footerEctn.appendChild(footerE);

@@ -186,15 +186,37 @@ for (let i = 0; i < artworks.length; i++) {
 
   // INGRANDIMENTO IMMAGINI
   artImage.addEventListener("click", function () {
-    if (this.style.maxHeight !== "100vh") {
-      // Check if the image is not already enlarged
-      // console.log("click");
-      this.style.maxHeight = "100vh"; // Enlarge the image
-      this.style.cursor = "sw-resize"; // Change cursor to indicate resizing
+    if (window.innerWidth <= 768) {
+      // Mobile view: enlarge image to 100vw
+      if (this.style.maxWidth !== "100vw") {
+        // Check if the image is not already enlarged
+        this.style.minWidth = "auto";
+        this.style.maxWidth = "100vw"; // Enlarge the image
+        this.style.cursor = "sw-resize"; // Change cursor to indicate resizing
+
+        let artImages = Array.from(document.getElementsByClassName("artImage"));
+        console.log("we");
+        console.log(artImages);
+
+        artImages.forEach((e) => {
+          e.style.maxHeight = "auto";
+        });
+      } else {
+        // Reset the image to its initial dimensions
+        this.style.maxWidth = null;
+        this.style.cursor = ""; // Return to default cursor
+      }
     } else {
-      // Reset the image to its initial dimensions
-      this.style.maxHeight = null;
-      this.style.cursor = ""; // Return to default cursor
+      if (this.style.maxHeight !== "100vh") {
+        // Check if the image is not already enlarged
+        // console.log("click");
+        this.style.maxHeight = "100vh"; // Enlarge the image
+        this.style.cursor = "sw-resize"; // Change cursor to indicate resizing
+      } else {
+        // Reset the image to its initial dimensions
+        this.style.maxHeight = null;
+        this.style.cursor = ""; // Return to default cursor
+      }
     }
   });
 
@@ -213,7 +235,7 @@ for (let i = 0; i < artworks.length; i++) {
     artworks[i].format;
   artDownload.download = "INATTO_giventobecopied-" + (i + 1) + ".png";
   artDownload.classList.add("minWidth");
-  artDownload.style.textAlign = "right";
+  artDownload.classList.add("download");
 
   artImageCtn.appendChild(artImage);
   artImageCtn.appendChild(artImageNum);
