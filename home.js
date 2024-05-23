@@ -1,9 +1,9 @@
 let issues = [
   { issue: "il diritto di copiare", time: "24.03.2024", place: "MI, IT" },
-  { issue: "il diritto di manipolare", time: "12.09.2024", place: "MI, IT" },
-  { issue: "il diritto di distruggere", time: "25.03.2025", place: "MI, IT" },
-  { issue: "il diritto di dimenticare", time: "18.09.2025", place: "MI, IT" },
-  { issue: "il diritto di fallire", time: "20.03.2026", place: "MI, IT" },
+  { issue: "il diritto di fallire", time: "23.11.2024", place: "MI, IT" },
+  { issue: "il diritto di distruggere", time: "16.05.2025", place: "MI, IT" },
+  { issue: "il diritto di manipolare", time: "20.11.2025", place: "MI, IT" },
+  { issue: "il diritto di dimenticare", time: "13.05.2026", place: "MI, IT" },
 ];
 
 let issuesG = [
@@ -63,7 +63,7 @@ let footerDes =
   "INATTO è un progetto universitario sviluppato nel corso di Laboratorio di Progettazione di sistemi e artefatti complessi C1 della Laurea Magistrale in Design della Comunicazione del Politecnico di Milano. </br>Il macrotema del corso è la collaborazione, mentre il sottotema del progetto sono i DIRITTI. </br>Il progetto nasce dall'intento di riflettere sul valore sociale dell'editoria indipendente. ";
 let footerTxt = [
   {
-    sezione: "Redazione:</br>",
+    sezione: "CCO–Redazione:</br>",
     contenuto:
       "Miguel Amaya, Ginevra Bernasconi, Giulia Bonalumi, Martina Esposito, Federico Gajo, Camilla Tosi",
   },
