@@ -8,10 +8,10 @@ let issues = [
 
 let issuesG = [
   "Given to be copied",
-  "Given to be manipulated",
-  "Given to be destroyed",
-  "Given to be forgotten",
   "Out of failure",
+  "Given to be destroyed",
+  "Given to be manipulated",
+  "Given to be forgotten",
 ];
 
 let issuesLinks = [
@@ -55,29 +55,6 @@ let headerE;
 let headerIssue;
 let headerTime;
 let headerPlace;
-
-let footer;
-let footerE;
-let footerDesCtn;
-let footerDes =
-  "INATTO è un progetto universitario sviluppato nel corso di Laboratorio di Progettazione di sistemi e artefatti complessi C1 della Laurea Magistrale in Design della Comunicazione del Politecnico di Milano. </br>Il macrotema del corso è la collaborazione, mentre il sottotema del progetto sono i DIRITTI. </br>Il progetto nasce dall'intento di riflettere sul valore sociale dell'editoria indipendente. ";
-let footerTxt = [
-  {
-    sezione: "CCO–Redazione:</br>",
-    contenuto:
-      "Miguel Amaya, Ginevra Bernasconi, Giulia Bonalumi, Martina Esposito, Federico Gajo, Camilla Tosi",
-  },
-  {
-    sezione: "Contesto:</br>",
-    contenuto:
-      "Laboratorio di Progettazione di sistemi e artefatti complessi C1, </br> Laurea Magistrale in Design della Comunicazione,Scuola del Design, Politecnico di Milano",
-  },
-  {
-    sezione: "Docenti:</br>",
-    contenuto: "Elena Caratti, Francesco Scagliarini",
-  },
-  { sezione: "Cultrice della materia: </br>", contenuto: "Sara Lavazza" },
-];
 
 //HOME BTN
 home = document.createElement("a");
@@ -148,21 +125,51 @@ for (let i = 0; i < issuesG.length; i++) {
 }
 
 //FOOTER
+let footer;
+let footerE;
+let footerEctn;
+let footerDesCtn;
+let footerDes =
+  "INATTO è un progetto universitario sviluppato nel corso di Laboratorio di Progettazione di sistemi e artefatti complessi C1 della Laurea Magistrale in Design della Comunicazione del Politecnico di Milano. </br>Il macrotema del corso è la collaborazione, mentre il sottotema del progetto sono i diritti. </br>Il progetto nasce con l'intento di riflettere sul valore sociale dell'editoria indipendente. ";
+let footerTxt = [
+  {
+    sezione: "CCO–Redazione:</br>",
+    contenuto:
+      "Miguel Amaya, Ginevra Bernasconi, Giulia Bonalumi, Martina Esposito, Federico Gajo, Camilla Tosi",
+  },
+  {
+    sezione: "Contesto:</br>",
+    contenuto:
+      "Laboratorio di Progettazione di sistemi e artefatti complessi, </br> Sezione C1, A.A. 2023 - 2024</br> Laurea Magistrale in Design della Comunicazione,Scuola del Design, Politecnico di Milano",
+  },
+  {
+    sezione: "Docenti:</br>",
+    contenuto: "Elena Caratti, </br> Francesco Scagliarini",
+  },
+  { sezione: "Cultrice della materia: </br>", contenuto: "Sara Lavazza" },
+];
+
 footer = document.createElement("div");
 footer.classList.add("footer");
+
+footerEctn = document.createElement("div");
+footerEctn.classList.add("footerEctn");
 
 footerDesCtn = document.createElement("div");
 footerDesCtn.classList.add("footerDes");
 footerDesCtn.innerHTML = footerDes;
-document.body.appendChild(footerDesCtn);
+footer.appendChild(footerDesCtn);
 
 for (let i = 0; i < footerTxt.length; i++) {
   footerE = document.createElement("div");
   footerE.classList.add("footerE");
-  console.log(footerE);
+  footerE.style.minWidth = "12vw";
+  //   console.log(footerE);
   footerE.innerHTML = footerTxt[i].sezione + footerTxt[i].contenuto;
-  footer.appendChild(footerE);
+  footerEctn.appendChild(footerE);
 }
+footer.appendChild(footerEctn);
 document.body.appendChild(footer);
 
+//FINE
 console.log("works");

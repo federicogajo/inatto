@@ -99,12 +99,17 @@ html {
 
 .footer {
   display: flex;
+  flex-direction: column;
+  gap: 3vh;
   height: fit-content;
-  padding: 1vh;
+  padding: 3vh 1vh;
 }
-.footerDes {
-  padding: 1vh;
+
+.footerEctn {
+  display: flex;
+  flex-direction: row;
 }
+
 @media (min-width: 600px) {
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 }
