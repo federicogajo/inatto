@@ -151,6 +151,9 @@ html {
   .home {
     line-height: 2.5vh;
   }
+  .issue {
+    justify-content: center;
+  }
 
   .footer {
     gap: 5vh;

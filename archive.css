@@ -7,6 +7,8 @@
 
 .issue {
   position: absolute;
+  width: 100vw;
+  box-sizing: border-box;
   justify-content: space-between;
   background-color: #bde3f2;
   height: fit-content;
@@ -23,7 +25,7 @@
 }
 
 .artCtn {
-  margin-top: 2vh;
+  margin: 2vh 0;
 }
 
 .txt {
@@ -86,9 +88,6 @@ img:hover {
   .issue {
     flex-direction: row;
     padding: 0 1vw;
-  }
-  .headerIssue {
-    min-width: auto;
   }
 
   .download {
