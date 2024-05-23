@@ -223,4 +223,80 @@ for (let i = 0; i < artworks.length; i++) {
   artTecnica = document.createElement("div");
   artTecnica.innerHTML = artworks[i].tecnica;
   artTecnica.classList.add("minWidth");
-  artTecnica.class
+  artTecnica.classList.add("txt");
+  artTecnica.classList.add("txtCenter");
+
+  artDownload = document.createElement("a");
+  artDownload.innerHTML = "Download";
+  artDownload.classList.add("txt");
+  artDownload.href =
+    "assets/images/given to be copied-download/" +
+    artworks[i].author +
+    artworks[i].format;
+  artDownload.download = "INATTO_giventobecopied-" + (i + 1) + ".png";
+  artDownload.classList.add("minWidth");
+  artDownload.classList.add("download");
+
+  artImageCtn.appendChild(artImage);
+  artImageCtn.appendChild(artImageNum);
+
+  art.appendChild(artAuthor);
+  art.appendChild(artTitle);
+  art.appendChild(artImageCtn);
+  art.appendChild(artTecnica);
+  art.appendChild(artDownload);
+
+  artCtn.appendChild(art);
+  document.body.appendChild(artCtn);
+}
+
+//FOOTER
+//FOOTER
+let footer;
+let footerE;
+let footerEctn;
+let footerDesCtn;
+let footerDes =
+  "INATTO è un progetto universitario sviluppato nel corso di Laboratorio di Progettazione di sistemi e artefatti complessi C1 della Laurea Magistrale in Design della Comunicazione del Politecnico di Milano. </br>Il macrotema del corso è la collaborazione, mentre il sottotema del progetto sono i diritti. </br>Il progetto nasce con l'intento di riflettere sul valore sociale dell'editoria indipendente. ";
+let footerTxt = [
+  {
+    sezione: "CCO–Redazione:</br>",
+    contenuto:
+      "Miguel Amaya, Ginevra Bernasconi, Giulia Bonalumi, Martina Esposito, Federico Gajo, Camilla Tosi",
+  },
+  {
+    sezione: "Contesto:</br>",
+    contenuto:
+      "Laboratorio di Progettazione di sistemi e artefatti complessi, </br> Sezione C1, A.A. 2023 - 2024</br> Laurea Magistrale in Design della Comunicazione,Scuola del Design, Politecnico di Milano",
+  },
+  {
+    sezione: "Docenti:</br>",
+    contenuto: "Elena Caratti, </br> Francesco Scagliarini",
+  },
+  { sezione: "Cultrice della materia: </br>", contenuto: "Sara Lavazza" },
+];
+
+footer = document.createElement("div");
+footer.classList.add("footer");
+
+footerEctn = document.createElement("div");
+footerEctn.classList.add("footerEctn");
+
+footerDesCtn = document.createElement("div");
+footerDesCtn.classList.add("footerDes");
+footerDesCtn.innerHTML = footerDes;
+footer.appendChild(footerDesCtn);
+
+for (let i = 0; i < footerTxt.length; i++) {
+  footerE = document.createElement("div");
+  footerE.classList.add("footerE");
+  footerE.style.minWidth = "12vw";
+  //   console.log(footerE);
+  footerE.innerHTML = footerTxt[i].sezione + footerTxt[i].contenuto;
+  footerEctn.appendChild(footerE);
+}
+footer.appendChild(footerEctn);
+document.body.appendChild(footer);
+
+//FINE
+console.log("archive");
