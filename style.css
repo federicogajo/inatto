@@ -105,4 +105,61 @@ html {
 
 .footer {
   display: flex;
-  flex-dire
+  flex-direction: column;
+  gap: 2vh;
+  height: fit-content;
+  padding: 1vh;
+  padding-bottom: 2vh;
+}
+
+.footerEctn {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+
+  body,
+  html {
+    font-size: 0.85rem;
+    overflow-x: hidden;
+  }
+  .hero {
+    padding: 1vh 2vw;
+    /* height: fit-content; */
+  }
+  .heroTimes {
+    font-size: 1.8rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .heroTxtCtn-1,
+  .heroTxtCtn-4 {
+    font-size: 1.2rem;
+    width: 80%;
+  }
+
+  .heroTxtCtn-3 {
+    font-size: 1rem;
+    width: 60%;
+  }
+
+  .header {
+    min-height: 2.5vh;
+    align-items: center;
+  }
+  .home {
+    line-height: 2.5vh;
+  }
+  .issue {
+    justify-content: center;
+  }
+
+  .footer {
+    gap: 5vh;
+  }
+  .footerEctn {
+    flex-direction: column;
+    gap: 2.5vh;
+  }
+}
