@@ -50,7 +50,7 @@
 }
 .artImage {
   max-height: 180px;
-  transition: 0.25s;
+  transition: max-height 0.25s;
   /* border: white solid 2px; */
   box-sizing: border-box;
 }
@@ -97,6 +97,7 @@ img:hover {
   .artImage {
     max-height: none;
     max-width: 50vw;
+    transition: max-width 0.25s;
   }
   .artImage:hover {
     border: none;
