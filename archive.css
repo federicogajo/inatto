@@ -67,4 +67,40 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  text-shadow: -1px -1px 0 #ffff, 1px -1px 0 #ffff, -1px 1
+  text-shadow: -1px -1px 0 #ffff, 1px -1px 0 #ffff, -1px 1px 0 #ffff;
+}
+
+img:hover {
+  cursor: nesw-resize;
+}
+
+.download {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+
+  .header {
+    flex-direction: column;
+    padding: 2vh 0;
+  }
+  .issue {
+    flex-direction: row;
+    padding: 0 1vw;
+  }
+
+  .download {
+    text-align: center;
+  }
+
+  .artImage {
+    max-height: none;
+    max-width: 50vw;
+    transition: max-width 0.25s;
+  }
+  .artImage:hover {
+    border: none;
+    /* transition: none; */
+  }
+}
