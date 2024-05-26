@@ -29,7 +29,10 @@
 }
 
 .txt {
-  text-shadow: -1px -1px 0 #ffff, 1px -1px 0 #ffff, -1px 1px 0 #ffff;
+  text-shadow: -1px -1px #ffff, 1px 1px #ffff, 1px -1px #ffff, -1px 1px #ffff;
+  /* -webkit-text-stroke: unset;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 1px; */
   z-index: 10;
 }
 
@@ -67,7 +70,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  text-shadow: -1px -1px 0 #ffff, 1px -1px 0 #ffff, -1px 1px 0 #ffff;
+  border: white;
+  text-shadow: -1px -1px #ffff, 1px 1px #ffff, 1px -1px #ffff, -1px 1px #ffff;
 }
 
 img:hover {

@@ -10,6 +10,8 @@ html {
   font-family: "Arial Mono MT Pro", sans-serif;
   font-size: 0.9rem;
   line-height: 1.2;
+
+  touch-action: none;
 }
 
 .home {
@@ -101,8 +103,7 @@ html {
   /* z-index: 5; */
   color: black;
   /* -webkit-text-stroke: 0.75px white; */
-  text-shadow: -1px -1px 0 #ffff, 1px -1px 0 #ffff, -1px 1px 0 #ffff,
-    1px 1px 0 #ffff;
+  text-shadow: -1px -1px #ffff, 1px -1px #ffff, -1px 1px #ffff, 1px 1px #ffff;
 }
 
 .footer {
