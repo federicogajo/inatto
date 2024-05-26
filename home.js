@@ -27,9 +27,7 @@ let issA;
 
 let colors = [
   "#bde3f2", //azzurro
-
   "#ffb1cb", //rosa
-
   "#feff9c", //giallo
   "#aff5d7", //verde
   "#bdb5da", //lilla
@@ -95,7 +93,7 @@ document.body.appendChild(home);
 for (let i = 0; i < issuesG.length; i++) {
   iss = document.createElement("div");
   iss.classList.add("issue");
-  iss.style.backgroundColor = "white";
+  // iss.style.backgroundColor = "white";
   // iss.style.backgroundImage = "url('assets/images/home/" + i + ".gif')";
   // iss.style.backgroundImage = "url('assets/images/home/" + i + ".gif')";
   iss.style.backgroundImage = "url('assets/images/home2/" + i + ".png')";
