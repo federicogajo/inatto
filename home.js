@@ -27,10 +27,12 @@ let issA;
 
 let colors = [
   "#bde3f2", //azzurro
+
+  "#ffb1cb", //rosa
+
   "#feff9c", //giallo
   "#aff5d7", //verde
-  "#ffb1cb", //rosa
-  "#ffffff", //bianco
+  "#bdb5da", //bianco
 ];
 
 let home;
