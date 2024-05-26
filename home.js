@@ -32,7 +32,7 @@ let colors = [
 
   "#feff9c", //giallo
   "#aff5d7", //verde
-  "#bdb5da", //bianco
+  "#bdb5da", //lilla
 ];
 
 let home;
