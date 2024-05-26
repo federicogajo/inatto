@@ -70,7 +70,7 @@ let artworks = [
     author: "Fuso Studio",
     title: "Totem",
     tecnica: "Illustrazione",
-    format: ".jpeg",
+    format: ".jpg",
   },
   {
     author: "Germana Sironi",
