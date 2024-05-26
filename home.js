@@ -94,7 +94,8 @@ for (let i = 0; i < issuesG.length; i++) {
   iss = document.createElement("div");
   iss.classList.add("issue");
   iss.style.backgroundColor = "white";
-  iss.style.backgroundImage = "url('assets/images/home/" + i + ".gif')";
+  // iss.style.backgroundImage = "url('assets/images/home/" + i + ".gif')";
+  iss.style.backgroundImage = "url('assets/images/home2/" + i + ".png')";
 
   header = document.createElement("div");
   header.classList.add("header");
