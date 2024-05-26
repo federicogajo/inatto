@@ -61,6 +61,7 @@ let artworks = [
     format: ".png",
   },
   {
+    ////
     author: "Francesco Bellagamba",
     title: "Untitled",
     tecnica: "Illustrazione",
